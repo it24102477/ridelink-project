@@ -1,0 +1,29 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: driver-vehicle-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ridelink_driver
+      auto-index-creation: true
+
+ridelink:
+  jwt:
+    secret: RideLinkSuperSecretKeyForDevelopmentOnly123456789
+    expiration-ms: 86400000
+
+  services:
+    ride-service-url: ${RIDE_SERVICE_URL:http://localhost:8083}
+  geocoding:
+    nominatim-url: ${NOMINATIM_URL:https://nominatim.openstreetmap.org}
+    country-codes: ${GEOCODING_COUNTRY_CODES:lk}
+    user-agent: ${GEOCODING_USER_AGENT:RideLink/1.0 (student project)}
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.ridelink: INFO
