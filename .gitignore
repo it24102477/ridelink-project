@@ -1,0 +1,41 @@
+# --- Maven / Java build output (every service) ---
+target/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# --- Secrets / local configuration ---
+# Never commit a real .env - only .env.example is tracked (brief section 6.3).
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+*.pem
+*.key
+
+# --- IDE ---
+.idea/
+*.iml
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- Test / coverage output ---
+*.exec
+site/
