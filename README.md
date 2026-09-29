@@ -8,10 +8,10 @@ section 6.5) — use Swagger UI or the Postman collection in `/postman`.
 
 | # | Service | Primary owner | Port |
 |---|---------|---------------|------|
-| 1 | Account Service | Member 1 *(fill in name)* | 8081 |
-| 2 | Driver & Vehicle Service | Member 2 *(fill in name)* | 8082 |
-| 3 | Ride Management Service | Member 3 *(fill in name)* | 8083 |
-| 4 | Fare & Payment Service | Member 4 *(fill in name)* | 8084 |
+| 1 | Account Service | IT24102477 | 8081 |
+| 2 | Driver & Vehicle Service | IT24102666 | 8082 |
+| 3 | Ride Management Service | IT24102711 | 8083 |
+| 4 | Fare & Payment Service | IT24102651 | 8084 |
 
 > Fill in real names before submission — the brief requires this to be recorded
 > in both the report and this README (section 7).
