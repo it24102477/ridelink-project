@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: account-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ridelink_account
+
+ridelink:
+  jwt:
+    secret: RideLinkSuperSecretKeyForDevelopmentOnly123456789
+    expiration-ms: 86400000
+
+  services:
+    ride-service-url: http://localhost:8083
+    driver-service-url: http://localhost:8082
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.ridelink: INFO
