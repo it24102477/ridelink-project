@@ -1,0 +1,307 @@
+{
+  "info": {
+    "_postman_id": "a5958b5b-da95-4118-9681-9d4acc8524af",
+    "name": "fare_and_payment_service_collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57096835",
+    "_collection_link": "https://go.postman.co/collection/57096835-a5958b5b-da95-4118-9681-9d4acc8524af?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1Iiwicm9sZSI6IlBBU1NFTkdFUiIsImlhdCI6MTc5MDc1MDc1MSwiZXhwIjoxNzkwODM3MTUxfQ.Sh5qBk6MqWeR46ZNKWMCJNIGPw1nVg2WAOHTpm-ReXU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"pickup\": \"Colombo Fort, Colombo, Sri Lanka\",\r\n  \"destination\": \"Bambalapitiya, Colombo, Sri Lanka\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/fares/estimate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "fares",
+            "estimate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1Iiwicm9sZSI6IlBBU1NFTkdFUiIsImlhdCI6MTc5MDc1MTM5OCwiZXhwIjoxNzkwODM3Nzk4fQ.hOqqzwkU8Bn0-hG63SecLeopv1cLPqqDtWIMpX8sFfA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"pickup\": \"Colombo Fort, Colombo, Sri Lanka\",\r\n  \"destination\": \"Bambalapitiya, Colombo, Sri Lanka\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/5/rides",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "5",
+            "rides"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNSIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NTE5MjMsImV4cCI6MTc5MDgzODMyM30.1cmiIwTk6DoSIV5exr5M4UhpsIdzDQqjVeYHRQ1PYqw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"driverId\": \"6\",\r\n  \"actualDurationMinutes\": 34,\r\n  \"paymentMethod\": \"SIMULATED_CARD\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/payments/rides/38/Payment",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "payments",
+            "rides",
+            "38",
+            "Payment"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1Iiwicm9sZSI6IlBBU1NFTkdFUiIsImlhdCI6MTc5MDc1NDA0MywiZXhwIjoxNzkwODQwNDQzfQ.LVfQCHzwD9CmRg2RPeIlMeez_aA0cX36q28m_CDI02c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"janith@gmail.com\",\r\n  \"password\": \"123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/passenger/5/payments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "passenger",
+            "5",
+            "payments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1Iiwicm9sZSI6IlBBU1NFTkdFUiIsImlhdCI6MTc5MDc1NDA0MywiZXhwIjoxNzkwODQwNDQzfQ.LVfQCHzwD9CmRg2RPeIlMeez_aA0cX36q28m_CDI02c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"janith@gmail.com\",\r\n  \"password\": \"123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/passenger/5/payments/ride/16",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "passenger",
+            "5",
+            "payments",
+            "ride",
+            "16"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc5MDc1NDI2NCwiZXhwIjoxNzkwODQwNjY0fQ.BFYL-F4e_56smWZ6UQP2ogqPDIuIxoc6mecLFa_v-Zc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"admin123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/admin/payments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "admin",
+            "payments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc5MDc1NDI2NCwiZXhwIjoxNzkwODQwNjY0fQ.BFYL-F4e_56smWZ6UQP2ogqPDIuIxoc6mecLFa_v-Zc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"admin123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8084/api/admin/payments/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "admin",
+            "payments",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

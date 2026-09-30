@@ -1,0 +1,395 @@
+{
+  "info": {
+    "_postman_id": "5091c43d-8668-4bff-9683-08f007c46c2e",
+    "name": "Driver_&_vehicle_service-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57096835",
+    "_collection_link": "https://go.postman.co/collection/57096835-5091c43d-8668-4bff-9683-08f007c46c2e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"licenseNumber\": \"B1234567\",\r\n  \"vehicle\": {\r\n    \"make\": \"Toyota\",\r\n    \"model\": \"Prius\",\r\n    \"plateNumber\": \"CAB1234\",\r\n    \"color\": \"White\",\r\n    \"capacity\": 4\r\n  },\r\n  \"serviceArea\": \"Colombo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/26/drivers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "26",
+            "drivers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"licenseNumber\": \"B1234567\",\r\n  \"vehicle\": {\r\n    \"make\": \"Toyota\",\r\n    \"model\": \"Prius\",\r\n    \"plateNumber\": \"CAB1234\",\r\n    \"color\": \"White\",\r\n    \"capacity\": 4\r\n  },\r\n  \"serviceArea\": \"Colombo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/drivers/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "drivers",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"licenseNumber\": \"B1234567\",\r\n  \"vehicle\": {\r\n    \"make\": \"Toyota\",\r\n    \"model\": \"Prius\",\r\n    \"plateNumber\": \"CAB1234\",\r\n    \"color\": \"White\",\r\n    \"capacity\": 4\r\n  },\r\n  \"serviceArea\": \"Colombo\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/drivers/available?serviceArea=Colombo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "drivers",
+            "available"
+          ],
+          "query": [
+            {
+              "key": "serviceArea",
+              "value": "Colombo"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"make\": \"Honda\",\r\n  \"model\": \"Vezel\",\r\n  \"plateNumber\": \"CBA5678\",\r\n  \"color\": \"Black\",\r\n  \"capacity\": 4\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/26/drivers/10/vehicle",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "26",
+            "drivers",
+            "10",
+            "vehicle"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"serviceArea\": \"Matara\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/26/drivers/10/service-area",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "26",
+            "drivers",
+            "10",
+            "service-area"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"availability\": \"AVAILABLE\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/26/drivers/10/availability",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "26",
+            "drivers",
+            "10",
+            "availability"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNiIsInJvbGUiOiJEUklWRVIiLCJpYXQiOjE3OTA3NDIwMDYsImV4cCI6MTc5MDgyODQwNn0.HAMvXNipVmjtQC27ak3NiUINPF7i3AHCrMTkebWI1kA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"address\": \"Weligama\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/26/drivers/10/location",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "26",
+            "drivers",
+            "10",
+            "location"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc5MDc0MzExOSwiZXhwIjoxNzkwODI5NTE5fQ.1psCedjEBXl2NIES6UgkThOhTmtoNhcLr8trnenCRho",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"address\": \"Weligama\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/admin/drivers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "admin",
+            "drivers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc5MDc0MzExOSwiZXhwIjoxNzkwODI5NTE5fQ.1psCedjEBXl2NIES6UgkThOhTmtoNhcLr8trnenCRho",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"address\": \"Weligama\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/admin/drivers/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "admin",
+            "drivers",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
