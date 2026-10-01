@@ -98,10 +98,10 @@ docker compose up --build
 
 Each service exposes Swagger UI once running:
 
-- http://localhost:8081/swagger-ui.html (Account)
-- http://localhost:8082/swagger-ui.html (Driver & Vehicle)
-- http://localhost:8083/swagger-ui.html (Ride Management)
-- http://localhost:8084/swagger-ui.html (Fare & Payment)
+- http://localhost:8081/swagger-ui/index.html (Account)
+- http://localhost:8082/swagger-ui/index.html (Driver & Vehicle)
+- http://localhost:8083/swagger-ui/index.html (Ride Management)
+- http://localhost:8084/swagger-ui/index.html (Fare & Payment)
 
 ## Testing
 
