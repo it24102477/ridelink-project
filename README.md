@@ -44,7 +44,7 @@ comparison required by the brief.
 
 ## Prerequisites
 
-- Java 17+
+- Java 21
 - Maven 3.9+
 - MongoDB 6/7 running locally on `27017` (or use `docker compose up mongodb`)
 - (Optional) Docker, if you'd rather run everything in containers
