@@ -1,0 +1,35 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: fare-payment-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ridelink_fare
+
+ridelink:
+  jwt:
+    secret: RideLinkSuperSecretKeyForDevelopmentOnly123456789
+  services:
+    ride-service-url: http://localhost:8083
+  geocoding:
+    nominatim-url: https://nominatim.openstreetmap.org
+    country-codes: lk
+    user-agent: RideLink/1.0 (student project)
+  routing:
+    enabled: true
+    osrm-url: https://router.project-osrm.org
+  fare:
+    base-fare: 300.0
+    per-km-rate: 80.0
+    per-min-rate: 10.0
+    currency: LKR
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.ridelink: INFO
