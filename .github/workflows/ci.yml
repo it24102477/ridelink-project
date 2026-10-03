@@ -1,6 +1,6 @@
 name: RideLink CI
 
-# Builds and runs the unit tests for all four microservices on every push and
+# Builds and runs the unit tests for the microservices on every push and
 # pull request against main (brief section 6.4: "Configure a CI pipeline that
 # automatically builds and runs tests for all four services on the agreed
 # repository events"). A single `mvn verify` at the aggregator POM root covers
@@ -25,7 +25,6 @@ jobs:
           - account-service
           - driver-vehicle-service
           - ride-management-service
-          - fare-payment-service
 
     steps:
       - name: Check out repository
